@@ -1,0 +1,39 @@
+@import '_variables.scss';
+@import 'custom-table';
+@import '_mixins.scss';
+@import '_slider.scss';
+
+.custom-btn-primary {
+    @include button-style($brand-primary);
+}
+
+
+.custom-btn-primary2 {
+    color: #000;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+
+    &:hover, &:focus, &:active, &:active:hover, &:active:focus {
+        background-color: $btn-primary-color-dark ;
+        border-color: $btn-primary-color-dark ;
+        color: #000;
+    }
+}
+
+.custom-navbar {
+    .search-btn {
+        color: #ffffff;
+        background-color: $brand-danger;
+        border-color: $brand-danger;
+
+        &:hover, &:active, &:focus, &:active:focus, &:active:hover {
+            background-color: $btn-danger-color-dark;
+            border-color: $btn-danger-color-dark;
+            color: #ffffff;
+        }
+    }
+}
+
+.custom-btn-danger {
+    @include button-style($brand-danger);
+}

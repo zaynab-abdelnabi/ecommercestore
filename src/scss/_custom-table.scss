@@ -1,0 +1,30 @@
+.custom-table{
+    min-width: 100%;
+
+    th, td {
+        font-size: 120%;
+        padding: 15px;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+
+        &:first-child {
+            width: 50%;
+        }
+    }
+    
+    th {
+        color: #c2c2c2;
+        font-weight: normal;
+
+        &:first-child {
+            padding-right: 15px;
+        }
+    }
+    
+    tfoot{
+        td {
+            font-size: 150%;
+            border-bottom: none;
+        }
+    }
+}
